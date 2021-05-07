@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <style>
+            /* Use a media query to add a breakpoint at 800px: */
+            @media screen and (max-width: 800px) {
+                .left, .main, .right {
+                    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+                }
+            }
+            body {background-color: rgb(203, 236, 203)}
+            h2   {color: darkmagenta;}
+            .remarked_box    {
+                border: 2px;
+                border-color:darkorchid;
+                border-style: dashed; 
+                padding:8px; 
+                margin-left:10px; 
+                margin-right:10px;
+                word-spacing: 2px;
+                border-radius: 5px;
+                }
+            table {
+                    padding-left: 8px;
+                    background-color: lightgray;
+                    border-collapse: collapse;
+                    width: 50%;
+                }
+
+                th, td {
+                    text-align: left;
+                    padding: 8px;
+                }
+
+                tr:nth-child(even) {background-color: #f2f2f2;}
+            #list {
+                padding-left: 8px;
+                visibility: visible;
+                background-color: lightgray;
+                border-radius: 5px;
+            }
+            
+            ul {
+                list-style-type: circle;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color:darksalmon;
+                color: white;
+                text-align: center;
+            }
+
+            
+            .sepia {
+                opacity: 0.75;
+                }
+
+            .opaque {
+                opacity: 0.5;
+            }
+
+            .grayscale {
+                filter:grayscale(90%);
+            }
+            
+            img.opaque:hover {
+                opacity: 1;
+            }
+
+            img.opaque:blur {
+                opacity: 0.5;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .box {
+                float: left;
+                width: 50%;
+                padding: 50px;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .menu {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+
+            .menu a {
+                background-color:violet;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: black;
+            }
+
+            .main {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+
+            .right {
+                background-color: #e5e5e5;
+                float: left;
+                width: 20%;
+                padding: 15px;
+                margin-top: 7px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 620px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                    width: 100%;
+                }
+            }
+
+            .zoom {
+                padding: 50px;
+                background-color: green;
+                transition: transform .2s; /* Animation */
+                margin: 0 auto;
+            }
+
+            .zoom:hover {
+                transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad 02</title>
+
+    </head>
+    <body>
+        <div class="zoom" style="background-color:darkslateblue;padding:15px;text-align:center;">
+            <h1 style="color:white">Fernando Daniel Guanca</h1>
+        </div>
+
+        <div style="overflow:auto">
+            <div class="menu">
+              <a href="#">Mirinda Manzana</a>
+              <a href="#">Empanadas Salteñas</a>
+              <a href="#">Helado de Crema</a>
+              <a href="#">Asado jugoso</a>
+            </div>
+          
+            <div class="main">
+                <h2 >Sobre mí</h2>
+                <p class="remarked_box">
+                    Soy una persona coherente, ordenada, pero también inquieta, que busca mejorar siempre.
+                    Disfruto mucho de la música, me gusta sentir la energía de la gente cantando mis canciones favoritas en un estadio. Soy capaz de viajar lejos de casa para cumplir cada sueño que tengo.
+                    Son muchas motivaciones las que tengo y a veces no me alcanza el tiempo para hacer todo lo que me gustaría hacer.
+                </p>
+            </div>
+          
+            <div class="right">
+              <h2>Mis hashtags</h2>
+              <p>#recitales</p>
+              <p>#bonjovi</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <p style="padding-left: 8px;"> Si lo gustas, puedes buscarme en <a href="https://www.google.com.ar/">Google Argentina</a> </p>
+
+        <h2 style="color: darkmagenta;">Mis actividades favoritas</h2>
+        
+        <div id="list">
+            <ul>
+                <li>Beber mirinda manzana mientras veo una buena serie.</li>
+                <li>Escuchar música sentado en un sillón.</li>
+                <li>Ir a recitales.</li>
+                <li>Visitar a mis amigos.</li>
+                <li>Tener una buena charla con una persona interesante.</li>
+                <li>Enseñar lo que sé a los demás.</li>
+            </ul>
+        </div>
+        
+        <h2>Imagenes que me traen buenos recuerdos</h2>
+
+        <div class="clearfix" >
+            <div class="box" style="background-color:#bbb; height:380px;">
+               <img  src="https://i.ytimg.com/vi/EpAMWCSVfJ4/maxresdefault.jpg" class="grayscale opaque" style="width:50%;padding-left:8px;"></img>
+            </div>
+            <div class="box" style="background-color:#ccc; height:380px;">
+                <img src="https://i1.wp.com/lh3.ggpht.com/_3Ugzh1sTV74/TK8qPdlyDqI/AAAAAAAAA-8/9ZKq15X7SRo/s640/33787_1623363901745_1165907539_1739077_3153925_n.jpg" class="grayscale opaque" style="width:50%;padding-left:8px;">
+            </div>
+          </div>
+
+        <h2>Mis amigos de la secundaria</h2>
+
+        <div style="overflow-x:auto;padding-left: 8px;">
+            <table>
+                <tr>
+                    <th>Nombre completo</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Justo Javier Jurado</td>
+                    <td>48</td>                    
+                </tr>
+                <tr>
+                    <td>Daniel Lenes</td>
+                    <td>48</td>                    
+                </tr>
+                <tr>
+                    <td>Sergio Gustavo De La Cuesta</td>
+                    <td>48</td>                    
+                </tr>  
+                <tr>
+                    <td>Fernando Adrián Flores</td>
+                    <td>48</td>                    
+                </tr>  
+            </table>
+        </div>
+        <h2>Un video que me gusta</h2>
+        <iframe style="padding-left: 8px;" width="1097" height="617" src="https://www.youtube.com/embed/MfmYCM4CS8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <h2>Mis comentarios sobre la actividad</h2>
+        <p class="remarked_box" style="margin-bottom:50px;">
+            Fue muy interesante jugar con los colores y los comportamientos de los textos y los bloques.
+        </p>
+
+        <div class="footer">
+            <text>Mi información de contacto: 
+                <span>
+                    fernandoguanca@gmail.com
+                </span>
+            </text>
+          </div>
+    </body>  
+</html>

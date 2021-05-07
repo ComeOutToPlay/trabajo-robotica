@@ -1,0 +1,81 @@
+ /* Use a media query to add a breakpoint at 800px: */
+ @media screen and (max-width: 800px) {
+    .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+body {background-color: rgb(203, 236, 203); background:url("water.jpg")}
+h1 {color:rgb(29, 13, 44);}
+h2 {color:rgb(53, 45, 105);}
+
+.cabeceras {
+    background-color:cyan;
+    padding:5px;
+    border-color: blueviolet;
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 3px;
+}
+
+.cabeceras h1   {color:indigo; border: 1px; border-radius: 3px;}
+.cabeceras h2   {color:blue; border: 1px; border-radius: 3px;}
+.cabeceras h3   {color:darkcyan; border: 1px; border-radius: 3px;}
+.cabeceras h4   {color:firebrick; border: 1px; border-radius: 3px;}
+.cabeceras h5   {color:yellow; border: 1px; border-radius: 3px;}
+.cabeceras h6   {color:brown; border: 1px; border-radius: 3px;}
+
+.remarked_box    {
+    border: 2px;
+    border-color:darkorchid;
+    border-style: dashed; 
+    padding:8px; 
+    margin-left:10px; 
+    margin-right:10px;
+    word-spacing: 2px;
+    border-radius: 5px;
+}
+
+.mailbox_container {
+    margin-top:30px;
+    margin-bottom: 30px;
+    background-color: cyan;
+    border:lightseagreen;
+    border-radius: 10px;
+    border-style: dotted;
+}
+.mailbox {
+    width: 100px;
+    height: 100px;
+}
+
+.image_example_isolated {
+    height:220px;
+}
+
+.floating {
+    float:left;
+    height: 250px;
+    padding: 2px;
+}​
+
+p { 
+    color:blue;
+}
+.spacer {
+    clear: both;
+}
+
+.ending {
+    background: #111;
+    perspective: 200px;
+    height:350px;
+}
+
+.custom_p {
+    font-size: 30px;
+    color: #fcd000;
+    font-weight: bold;
+    width: 600px;
+    margin: 0 auto;
+    transform: rotateX(30deg);
+}
